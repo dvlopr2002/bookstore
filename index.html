@@ -1,0 +1,560 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Book Store</title>
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- external css -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary nav_bar">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="./images/logo.png" alt="logo_img" class="logoimg">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">PRODUCTS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">FEATURES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">SHORTCODES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">POST TYPES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- banner start -->
+    <section class="banner">
+        <div class="overlay">
+            <div class="container">
+                <div class="banner-content">
+                    <div class="banner-text">
+                        <p>Publiching House</p>
+                        <h1>The new novel from
+                            Bline Pearson</h1>
+                        <div class="all-btn banner-btn">
+                            <a href="">
+                                READ MORE
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <main>
+        <!-- discover your book (dyb) -->
+        <section class="dyb">
+            <div class="container">
+                <div class="row dyb-top-text">
+                    <div class="col-8">
+                        <h2>Discover Your <br>
+                            Next Book</h2>
+                    </div>
+                    <div class="col-4 text-end">
+                        <a href="">View All</a>
+                    </div>
+                </div>
+
+                <div class="row row-cols-1  row-cols-sm-2  row-cols-lg-4 dyb-card-container">
+                    <div class="col">
+                        <div class="card">
+                            <img src="./images/card-1.png" class="card-img-top" alt="...">
+                            <div class="card-body card-bellow-content">
+                                <p>Daniel Trejo</p>
+                                <h3>History of Europe</h3>
+                                <h4><del>$46.00</del> <span class="red-text">$40.00</span></h4>
+                            </div>
+                            <div class="card-btn">
+                                <a href="">Sale</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card">
+                            <img src="./images/card-2.png" class="card-img-top" alt="...">
+                            <div class="cart">
+                                <p><i class="fa-solid fa-cart-shopping"> </i> Add to Cart</p>
+                            </div>
+                            <div class="card-body card-bellow-content">
+                                <p>Daniel Trejo</p>
+                                <h3>Sonets</h3>
+                                <h4><span class="red-text">$27.00</span></h4>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card">
+                            <img src="./images/card-3.png" class="card-img-top" alt="...">
+                            <div class="card-body card-bellow-content">
+                                <p>Daniel Trejo</p>
+                                <h3>Becoming</h3>
+                                <h4><span class="red-text">$28.00</span></h4>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card">
+                            <img src="./images/card-4.png" class="card-img-top" alt="...">
+                            <div class="card-body card-bellow-content">
+                                <p>Daniel Trejo, Jon Snow</p>
+                                <h3>Penguin Classics</h3>
+                                <h4><span class="red-text">$26.00 – $28.00</span></h4>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Brows book by genere (bbg) -->
+        <section class="bbg">
+            <div class="container">
+                <div class="row bbg-top-text">
+                    <div class="col-8">
+                        <h2>Browse Books <br>by Genre</h2>
+                    </div>
+                    <div class="col-4 text-end">
+                        <a>Explore More Categories</a>
+                    </div>
+                </div>
+
+                <div class="row row-cols-2 row-cols-md-3 row-cols-lg-5 bbg-card-container">
+                    <div class="col">
+                        <div class="card">
+                            <img src="./images/card-7.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Adventure</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="./images/card-6.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Biography</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="./images/card-9.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Romance</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="./images/card-8.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Science</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="./images/card-10.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Action</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="arrow">
+                        <div class="right-arrow"><i class="fa-solid fa-less-than"></i></div>
+                        <div class="left-arrow"><i class="fa-solid fa-greater-than"></i></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- about -->
+        <section class="about">
+            <div class="container">
+                <div class="row justify-content-center">
+
+                    <figure class="col-6 col-md-6 col-lg-5 text-center text-lg-start">
+                        <img src="./images/about-img.png" alt="" class="img-fluid">
+                    </figure>
+
+                    <div class="col-12 col-md-6  col-lg-4">
+                        <div class="about-left-text text-center text-lg-start">
+                            <p class="wriiter-name">George Stewart</p>
+                            <h2>The Man in the
+                                Glass House</h2>
+                            <h3>Philip Johnson, Architect of the Modern
+                                Century</h3>
+                            <p class="para2">We work with our partners to streamline project plans that
+                                don’t just deliver on product perfection, but also delivers on
+                                time – crucial to success in a highly competitive market where
+                                every day counts. We work with our partners to streamline
+                                project plans that don’t just deliver on product perfection, but
+                                also delivers on time</p>
+                            <h4 class="para-4">Price: <span class="red-text">$14.99</span> </h4>
+
+                            <div class="all-btn about-btn">
+                                <a href="">
+                                    READ MORE
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Author -->
+        <section class="author">
+            <div class="container">
+                <div class="row author-top-content">
+                    <div class="col-12">
+                        <h2>Noted Authors</h2>
+                    </div>
+                    <div class="col-7 col-md-6 col-lg-3">
+                        <p>Authors & their work are at the
+                            center of everything we do.</p>
+                    </div>
+                    <div class="col-5  col-md-6 col-lg-9 text-end">
+                        <a href="">Full Authors List</a>
+                    </div>
+                </div>
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 author-card-container">
+                    <div class="col">
+                        <div class="card author-card">
+                            <img src="./images/card-11.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card  author-card">
+                            <img src="./images/card-12.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card  author-card">
+                            <img src="./images/card-13.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card  author-card">
+                            <img src="./images/card-14.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- gcp -->
+        <section class="gcp">
+            <div class="container">
+                <div class="row txt-sm-center  align-items-center">
+                    <div class="col-md-6 text-center text-md-start">
+                        <div class="gcp-left-text">
+                            <h2>Don’t miss news from Grand
+                                Central Publishing</h2>
+                        </div>
+                    </div>
+                    <div class="col-md-6 text-center">
+                        <div class="gcp-right-part">
+                            <form action="">
+                                <input type="email" placeholder="Email *">
+                                <button class="gcp-form-btn">Subscribe</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- discover your-next book (dynb) -->
+        <section class="dyb" id="dynb">
+            <div class="container">
+                <div class="row dyb-top-text">
+                    <div class="col-8">
+                        <h2>Discover Your <br>
+                            Next Book</h2>
+                    </div>
+                    <div class="col-4 text-end">
+                        <a href="">Explore More Categories</a>
+                    </div>
+                </div>
+
+                <div class="row row-cols-1  row-cols-sm-2  row-cols-lg-4 dyb-card-container" id="dynb-card-container">
+                    <div class="col">
+                        <div class="card">
+                            <img src="./images/card-15.png" class="card-img-top" alt="...">
+                            <div class="card-body card-bellow-content">
+                                <p>Daniel Trejo</p>
+                                <h3>A Man of The People</h3>
+                                <h4><span class="red-text">$44.00</span></h4>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card">
+                            <img src="./images/card-16.png" class="card-img-top" alt="...">
+                            <div class="cart">
+                                <p><i class="fa-solid fa-cart-shopping"> </i> Add to Cart</p>
+                            </div>
+                            <div class="card-body card-bellow-content">
+                                <p>Daniel Trejo</p>
+                                <h3>Cookbook</h3>
+                                <h4><span class="red-text">$28.00</span></h4>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card">
+                            <img src="./images/card-17.png" class="card-img-top" alt="...">
+                            <div class="card-body card-bellow-content">
+                                <p>Daniel Trejo</p>
+                                <h3>Best of Enemies</h3>
+                                <h4><span class="red-text">$28.00</span></h4>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card">
+                            <img src="./images/card-19.png" class="card-img-top" alt="...">
+                            <div class="card-body card-bellow-content">
+                                <p>Daniel Trejo, Jon Snow</p>
+                                <h3>Penguin Classics</h3>
+                                <h4><span class="red-text">$26.00 – $28.00</span></h4>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- blog -->
+        <section class="blog">
+            <div class="container">
+                <div class="row blog-top-text">
+                    <div class="col-6 col-md-6 col-lg-4">
+                        <h2>Latest from
+                            Printpress Blog</h2>
+                    </div>
+                    <div class="col-6 col-md-6 col-lg-8 text-end">
+                        <a href="
+                        ">Fresh Collections</a>
+                    </div>
+                </div>
+                <div class="blog-card-main-container">
+                    <div class="row row-cols-1  row-cols-sm-2  row-cols-md-3 blog-card-container">
+                        <div class="col">
+                            <div class="card blog-card">
+                                <img src="./images/card-20.png" class="img-fluid" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Finissage of Reads Like a
+                                        Book exhibition</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card blog-card">
+                                <img src="./images/card-21.png" class="img-fluid" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">10 Best Exciting Books for
+                                        Children</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card blog-card">
+                                <img src="./images/card-22.png" class="img-fluid" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Facts You Didn't Know About
+                                        Books </h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- top book -->
+        <section class="top-book">
+            <div class="container">
+                <div class="row top-book-top-text">
+                    <div class="col-6 col-md-6 col-lg-4">
+                        <h2>Our top books
+                            for 2019</h2>
+                    </div>
+                    <div class="col-6 col-md-6 col-lg-8  text-end">
+                        <a href="">Fresh Collections</a>
+                    </div>
+                </div>
+
+                <div class="books-card-container">
+                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3  row-cols-lg-4">
+
+                        <div class="col">
+                            <div class="card top-book-card">
+                                <img src="./images/card-23.png" class="img-fluid" alt="...">
+                                <div class="card-bellow-text">
+                                    <h5>20 books to <br>
+                                        Help You <br>
+                                        Bring up a <br>
+                                        Child </h5>
+                                    <div class="top-book-card-link"><a>Read More</a></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card top-book-card">
+                                <img src="./images/card-24.png" class="img-fluid" alt="...">
+                                <div class="card-bellow-text">
+                                    <h5>40 Books to <br>
+                                        Read Before <br>
+                                        You Turn 40
+                                    </h5>
+                                    <div class="top-book-card-link"><a>Read More</a></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card top-book-card">
+                                <img src="./images/card-25.png" class="img-fluid" alt="...">
+                                <div class="card-bellow-text">
+                                    <h5>45 Books <br>
+                                        About Great <br>
+                                        Women </h5>
+                                    <div class="top-book-card-link">
+                                        <a>Read More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card top-book-card">
+                                <img src="./images/Layer 11.png" class="img-fluid" alt="...">
+                                <div class="card-bellow-text">
+                                    <h5>10 books to <br>
+                                        Help You <br>
+                                        Believe in <br>
+                                        Yourself
+                                    </h5>
+                                    <div class="top-book-card-link"><a>Read More</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="row">
+                    <div class="col-sm-6 col-md-4 col-lg-3 text-center text-sm-start">
+                        <div class="footer-text">
+                            <p>1418 River Drive, Suite 35
+                                Cottonhall, CA 9622 United
+                                States</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3 text-center text-sm-start ">
+                        <div>
+                            <ul>
+                                <li>+1 530 347 4607</li>
+                                <li class="text-danger">printpress@example.net</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-lg-6 text-center text-sm-start text-lg-end">
+                        <div class="footer-images">
+                            <figure>
+                                <img src="./images/logo.png" alt="" class="img-fluid">
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="copy-right">
+                <div class="row">
+                    <div class="col-lg-6 text-center">
+                        <p>Privacy Policy / This is a sample website - cmsmasters © 2022 / All Rights Reserved</p>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="footer-menu text-white d-none d-lg-block">
+                            <ul class=" d-flex justify-content-end">
+                                <li><a href="">HOME</a></li>
+                                <li><a href="">PRODUCTS</a></li>
+                                <li><a href="">FEATURES</a></li>
+                                <li><a href="">SHORTCODES</a></li>
+                                <li><a href="">POST TYPES</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="side-btn">
+        <a href="">^</a>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

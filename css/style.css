@@ -1,0 +1,1467 @@
+@font-face {
+    font-family: Myriad;
+    src: url(../fonts/Myriad\ Pro\ Regular/);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --hex-triplet: #385777;
+    --light-red: #db6e6a;
+    --light-green: #5b9894;
+    --light-yellow: #d9dbcd;
+    --AntiqueWhite2: #eedfcc;
+    --light-grey: #8e8e8e;
+}
+
+
+html,
+body {
+    margin: auto !important;
+    overflow-x: hidden !important;
+    width: 100% !important;
+    font-family: Myriad, sans-serif !important;
+}
+
+h1 {
+    font-size: 63px;
+}
+
+h2 {
+    font-size: 40px;
+    line-height: 45px;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    font-size: 15px !important;
+}
+
+p {
+    font-size: 15px !important;
+    margin: 0 !important;
+}
+
+@media (min-width:1440px) {
+    .container {
+        max-width: 1240px !important;
+    }
+}
+
+
+/*navbar */
+header {
+    position: relative;
+}
+
+.nav_bar {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.nav-item .active {
+    color: var(--light-grey) !important;
+}
+
+
+/*Banner*/
+
+.banner {
+    height: 100vh;
+    background-image: url("../images/banner.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: right center;
+}
+
+
+.banner-content {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 105px;
+}
+
+
+.banner-text {
+    width: 50%;
+    text-align: center;
+}
+
+.banner-text p {
+    font-size: 24px !important;
+    font-weight: 550;
+    color: #eadbcc;
+    margin-bottom: 25px !important;
+}
+
+.banner-text h1 {
+    color: white;
+    line-height: 82px;
+}
+
+.all-btn a {
+    background-color: var(--hex-triplet);
+    padding: 19px 35px;
+    border-radius: 25px;
+    color: white;
+    text-transform: uppercase;
+}
+
+.banner-btn {
+    margin-top: 50px;
+}
+
+/* discover your book (dyb) */
+.dyb {
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+.dyb-top-text a {
+    color: var(--light-red);
+    font-size: 20px !important;
+}
+
+.dyb-card-container .card {
+    border: 0;
+    position: relative;
+}
+
+.dyb-top-text h2 {
+    font-weight: 600;
+}
+
+.dyb-card-container .card .card-bellow-content {
+    text-align: center;
+}
+
+.card-bellow-content p {
+    font-size: 19px !important;
+}
+
+.card-bellow-content h3 {
+    font-size: 20px;
+    line-height: 36px;
+    font-weight: 550;
+}
+
+.card-bellow-content h4 {
+    font-size: 18px;
+    font-weight: 550;
+}
+
+.red-text {
+    color: var(--light-red);
+}
+
+.card-btn a {
+    background-color: #cc302b;
+    padding: 1px 25px;
+    color: white;
+    border-radius: 25px;
+    position: absolute;
+    top: 29px;
+    right: 29px;
+    font-size: 15px !important;
+}
+
+.cart p {
+    background-color: var(--light-grey);
+    padding: 15px;
+    width: 92%;
+    color: white;
+    font-weight: 700;
+    position: absolute;
+    bottom: 146px;
+    left: 12px;
+    text-align: center;
+}
+
+
+.side-btn {
+    position: fixed;
+    right: 10px;
+    bottom: 30px;
+}
+
+.side-btn a {
+    background-color: var(--light-red);
+    color: white;
+    font-weight: 600;
+    padding: 19px 23px;
+    /* position: fixed; */
+}
+
+/* Brows book by genere (bbg) */
+.bbg {
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+
+.bbg-top-text h2 {
+    font-weight: 600;
+}
+
+.bbg-top-text a {
+    color: var(--light-red) !important;
+    font-size: 20px !important;
+}
+
+
+
+.bbg-card-container {
+    padding-top: 80px;
+    position: relative;
+}
+
+.bbg-card-container .card {
+    border: 0;
+    background-color: #ffffff !important;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.bbg-card-container .card-body h5 {
+    font-size: 25px;
+    font-weight: 600;
+    text-align: center;
+    line-height: 36px !important;
+}
+
+.fa-less-than,
+.fa-greater-than {
+    font-size: 18px;
+    padding: 23px 25px;
+    border-radius: 50px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    cursor: pointer;
+}
+
+.fa-less-than {
+    color: var(--light-red);
+    background-color: #ffffff;
+    position: absolute;
+    bottom: 28%;
+    left: -23px;
+
+    /* transform: translateY(-32%); */
+}
+
+.fa-greater-than {
+    color: var(--light-grey);
+    background-color: #ffffff;
+    position: absolute;
+    bottom: 28%;
+    right: -23px;
+}
+
+/* about */
+.about {
+    padding: 103px 0;
+    background-color: var(--AntiqueWhite2);
+}
+
+.about-left-text .wriiter-name {
+    color: var(--light-red);
+    font-size: 20px;
+    font-weight: 550;
+}
+
+.about-left-text h2 {
+    font-size: 50px;
+    line-height: 64px;
+    font-weight: 600;
+}
+
+.about-left-text h3 {
+    font-size: 25px;
+    line-height: 32px;
+    margin-bottom: 50px;
+}
+
+.about-left-text .para2 {
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.about-left-text h4 {
+    font-size: 18px;
+    margin-top: 40px;
+    font-weight: 550;
+}
+
+.about-btn {
+    margin-top: 53px;
+}
+
+/* Author */
+.author {
+    background-image: url("../images/author-bg.png");
+    min-height: 901px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 150px 0;
+}
+
+.author-top-content {
+    color: white;
+    font-size: 20px !important;
+}
+
+.author-top-content p {
+    font-size: 18px !important;
+}
+
+.author-top-content a {
+    color: white !important;
+    font-size: 18px !important;
+}
+
+.author-card-container {
+    padding-top: 100px;
+}
+
+.author-card-title h4 {
+    font-size: 25px;
+    color: white;
+    text-align: center;
+}
+
+.author-card-container .card {
+    background: none !important;
+    border: 0 !important;
+}
+
+.author-card-container .card h5 {
+    text-align: center;
+    color: white;
+    font-size: 25px !important;
+}
+
+.author-top-content h2 {
+    font-weight: 600;
+}
+
+/* gcp */
+.gcp-left-text h2 {
+    font-weight: 600;
+    color: white;
+}
+
+.gcp {
+    background-color: var(--light-green);
+    padding-top: 105px;
+    padding-bottom: 105px;
+    overflow: auto;
+}
+
+.gcp-right-part form {
+    position: relative;
+}
+
+.gcp-right-part form input {
+    width: 100%;
+    padding: 16px;
+    border-radius: 30px;
+    outline: none;
+    border: 0;
+}
+
+.gcp-form-btn {
+    background-color: var(--light-grey);
+    padding: 12px 63px;
+    border: 0;
+    outline: none;
+    border-radius: 25px;
+    position: absolute;
+    top: 3px;
+    right: 4px;
+    color: white;
+}
+
+
+/* discover your-next book (dynb) */
+#dynb-card-container {
+    padding-top: 30px;
+}
+
+/* blog */
+
+.blog {
+    padding-top: 149px;
+}
+
+.blog-top-text h2 {
+    font-weight: 550;
+}
+
+.blog-top-text a {
+    font-size: 20px !important;
+    color: var(--light-red);
+}
+
+.blog-card-container {
+    position: relative;
+    top: 90px;
+}
+
+.blog-card-container .blog-card h5 {
+    font-size: 25px;
+    font-weight: 550 !important;
+}
+
+.blog-card-container .blog-card {
+    border: 0 !important;
+}
+
+.blog-card-container .blog-card .card-body {
+    padding: 0;
+    padding: 30px;
+
+}
+
+/* top-book */
+.top-book {
+    background-color: var(--light-yellow);
+    padding-top: 275px;
+    padding-bottom: 150px;
+}
+
+.top-book-top-text h2 {
+    font-weight: 600;
+}
+
+.top-book-top-text a {
+    color: var(--light-red);
+    font-size: 20px !important;
+}
+
+.books-card-container .card {
+    border: 0 !important;
+    background: none !important;
+}
+
+.books-card-container {
+    padding-top: 81px;
+}
+
+/* .books-card-container .top-book-card {
+    position: relative;
+} */
+
+.books-card-container .card-bellow-text h5 {
+    font-size: 25px;
+    font-weight: 550;
+    color: white;
+}
+
+.top-book-card-link {
+    color: white;
+}
+
+.top-book-card-link a {
+    font-size: 19px !important;
+}
+
+.top-book-card {
+    position: relative;
+}
+
+.card-bellow-text h5 {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+
+}
+
+.top-book-card-link {
+    position: absolute;
+    left: 50px;
+    bottom: 50px;
+}
+
+/* footer */
+
+.footer-content {
+    padding-top: 180px;
+    padding-bottom: 180px;
+    position: relative;
+}
+
+.footer-content p {
+    font-size: 20px !important;
+}
+
+.footer-content li {
+    font-size: 20px !important;
+}
+
+.footer-content::after {
+    content: "";
+    height: 2px;
+    width: 100%;
+    background-color: #385777;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.copy-right {
+    padding: 20px 0;
+}
+
+.footer-menu ul li a {
+    color: var(--light-grey) !important;
+}
+
+.footer-menu ul li {
+    margin-left: 30px;
+}
+
+
+@media screen and (max-width:1200px) {
+
+    /* navbar */
+    .nav_bar {
+        padding-top: 10px !important;
+        padding-bottom: 10px !important;
+    }
+
+    .logoimg {
+        height: 75px !important;
+        width: 200px !important;
+    }
+
+    /* discover your book*/
+
+    .card-btn a {
+        background-color: #cc302b;
+        padding: 1px 25px;
+        color: white;
+        border-radius: 25px;
+        position: absolute;
+        top: 23px;
+        right: 22px;
+        font-size: 10px !important;
+    }
+
+    .cart p {
+        padding: 7px;
+        width: 92%;
+        color: white;
+        font-weight: 700;
+        position: absolute;
+        bottom: 143px;
+        left: 10px;
+    }
+
+    /* about */
+    .about-left-text {
+        padding-left: 20px;
+    }
+
+    .about-left-text h2 {
+        font-size: 38px;
+        line-height: 45px;
+    }
+
+    .about-left-text h3 {
+        font-size: 22px;
+        line-height: 30px;
+        margin-bottom: 10px;
+    }
+
+    .about-left-text h4 {
+        margin-top: 11px;
+    }
+
+    .about-btn {
+        margin-top: 32px;
+    }
+
+    /* blog */
+    .blog {
+        padding-top: 50px;
+    }
+
+    .blog-card-container .blog-card h5 {
+        font-size: 19px;
+        font-weight: 550 !important;
+    }
+
+    /* top books */
+    .books-card-container .card-bellow-text h5 {
+        font-size: 19px;
+        font-weight: 550;
+        color: white;
+    }
+
+    .books-card-container {
+        padding-top: 40px;
+    }
+
+    .card-bellow-text h5 {
+        position: absolute;
+        top: 30px;
+        left: 30px;
+    }
+
+    .top-book-card-link {
+        position: absolute;
+        left: 30px;
+        bottom: 30px;
+        font-size: 18px !important;
+    }
+
+    .top-book {
+        background-color: #d9dbcd;
+        padding-top: 160px;
+        padding-bottom: 100px;
+    }
+
+    /* footer */
+    .footer-content {
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+
+    .copy-right {
+        padding: 10px 0;
+    }
+
+    .footer-menu ul li {
+        margin-left: 20px;
+    }
+
+}
+
+@media screen and (max-width:990px) {
+
+    /* navbar */
+    .logoimg {
+        height: 70px !important;
+        width: 156px !important;
+    }
+
+    .nav_bar {
+        padding: 8px;
+        padding-bottom: 8px;
+    }
+
+    /* banner */
+    .banner-text {
+        width: 70% !important;
+    }
+
+    .banner-content {
+        padding-top: 100px;
+    }
+
+    .banner-text h1 {
+        color: white;
+        line-height: 60px;
+        font-size: 50px;
+    }
+
+    .banner-btn {
+        margin-top: 33px;
+    }
+
+    /* dyb */
+    .dyb {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .card-btn a {
+        background-color: #cc302b;
+        padding: 1px 25px;
+        color: white;
+        border-radius: 25px;
+        position: absolute;
+        top: 34px;
+        right: 35px;
+        font-size: 14px !important;
+    }
+
+    .cart p {
+        padding: 11px;
+        width: 91%;
+        color: white;
+        font-weight: 700;
+        position: absolute;
+        bottom: 149px;
+        left: 15px;
+    }
+
+    /* bbg */
+    .bbg {
+        padding-top: 40px;
+        padding-bottom: 30px;
+    }
+
+    .bbg-card-container .card {
+        margin-bottom: 20px;
+    }
+
+    .bbg-card-container {
+        padding-top: 35px;
+    }
+
+    .arrow {
+        display: none;
+    }
+
+    /* about */
+    .about {
+        padding: 50px 0;
+    }
+
+    .about-left-text h2 {
+        font-size: 35px;
+        line-height: 44px;
+    }
+
+    .about-left-text h3 {
+        font-size: 21px;
+        line-height: 25px;
+        margin-bottom: 10px;
+    }
+
+    .about-left-text h4 {
+        font-size: 15px;
+    }
+
+    .all-btn a {
+        padding: 15px 30px;
+    }
+
+    /* author */
+    .author {
+        padding: 75px 0;
+    }
+
+    .author-card-container {
+        padding-top: 51px;
+    }
+
+    /* gcp */
+    .gcp {
+        background-color: #5b9894;
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+
+    .gcp-right-part form input {
+        width: 100%;
+        padding: 10px;
+        border-radius: 30px;
+        outline: none;
+        border: 0;
+    }
+
+    .gcp-form-btn {
+        background-color: #8e8e8e;
+        padding: 7px 35px;
+        border: 0;
+        outline: none;
+        border-radius: 25px;
+        position: absolute;
+        top: 3px;
+        right: 4px;
+        color: white;
+    }
+
+    /* blog */
+    .blog-card-container .blog-card h5 {
+        font-size: 18px !important;
+        font-weight: 550 !important;
+    }
+
+    .blog-card-container {
+        position: relative;
+        top: 70px;
+    }
+
+    /* top books */
+    .books-card-container .card {
+        margin-bottom: 30px;
+    }
+
+    /* footer */
+    .footer-content {
+        padding-top: 90px;
+        padding-bottom: 90px;
+    }
+
+    .footer-content p {
+        font-size: 17px !important;
+    }
+
+    .footer-content li {
+        font-size: 17px !important;
+    }
+
+
+    .footer-images figure img {
+        height: 60px;
+        width: 140px;
+    }
+
+
+}
+
+@media screen and (max-width:767px) {
+    .banner {
+        background-size: 130% 100%;
+    }
+
+    .overlay {
+        background-color: rgba(0, 0, 0, 0.348);
+    }
+
+    .banner-text h1 {
+        color: white;
+        line-height: 47px;
+        font-size: 40px;
+    }
+
+    .all-btn a {
+        padding: 13px 17px;
+    }
+
+    .banner-btn {
+        margin-top: 22px;
+    }
+
+    .banner-text p {
+        margin-bottom: 15px !important;
+    }
+
+    /* dyb */
+    h2 {
+        font-size: 33px;
+        line-height: 38px;
+        font-weight: 550 !important;
+    }
+
+    .dyb-top-text a {
+        color: var(--light-red);
+        font-size: 18px !important;
+    }
+
+    .card-btn a {
+        padding: 1px 19px;
+        top: 25px;
+        right: 26px;
+        font-size: 12px !important;
+    }
+
+    .cart p {
+        padding: 7px;
+        width: 91%;
+        color: white;
+        font-weight: 500;
+        position: absolute;
+        bottom: 144px;
+        left: 11px;
+    }
+
+    /* bbg */
+    .bbg-top-text a {
+        color: var(--light-red) !important;
+        font-size: 18px !important;
+    }
+
+    .bbg-card-container .card-body h5 {
+        font-size: 23px !important;
+    }
+
+    /* about */
+    .about-left-text h2 {
+        font-size: 31px;
+        line-height: 43px;
+    }
+
+    .about-left-text h3 {
+        line-height: 15px;
+    }
+
+    .author {
+        padding: 55px 0;
+    }
+
+    /* gcp */
+    .gcp {
+        background-color: #5b9894;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .gcp-right-part form input {
+        width: 80%;
+        padding: 12px;
+        border-radius: 30px;
+        outline: none;
+        border: 0;
+        margin-top: 11px;
+    }
+
+    .gcp-form-btn {
+        padding: 9px 32px;
+        top: 14px;
+        right: 55px;
+        color: white;
+    }
+
+    /* blog */
+    .blog {
+        padding-top: 20px;
+    }
+
+    .blog-card-container {
+        position: relative;
+        top: 35px;
+    }
+
+    .blog-card-container .blog-card h5 {
+        font-size: 17px !important;
+        font-weight: 550 !important;
+    }
+
+    .blog-top-text a {
+        font-size: 18px !important;
+        color: var(--light-red);
+    }
+
+    .blog-card-container .blog-card h5 {
+        font-size: 16px !important;
+        /* font-weight: 400 !important; */
+    }
+
+    .blog-card {
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+        margin-bottom: 20px;
+    }
+
+    .blog-card .card .card-body {
+        padding: 0;
+        padding: 20px;
+    }
+
+    /* top book */
+    .top-book {
+        background-color: #d9dbcd;
+        padding-top: 110px;
+        padding-bottom: 50px;
+    }
+
+    .top-book-card-link a {
+        font-size: 17px !important;
+    }
+
+    .top-book-top-text a {
+        color: var(--light-red);
+        font-size: 18px !important;
+    }
+
+    /* footer */
+    .footer-content {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .footer-images {
+        margin-top: 20px !important;
+    }
+}
+
+@media screen and (max-width:575px) {
+
+    /* navbar */
+    .logoimg {
+        height: 50px !important;
+        width: 137px !important;
+    }
+
+    [type=button]:not(:disabled),
+    [type=reset]:not(:disabled),
+    [type=submit]:not(:disabled),
+    button:not(:disabled) {
+        cursor: pointer;
+        font-size: 15px !important;
+    }
+
+    /* banner */
+    h2 {
+        font-size: 25px;
+        line-height: 30px;
+    }
+
+    .banner-content {
+        height: 500px;
+    }
+
+    .banner {
+        height: 500px;
+        background-size: 133% 100%;
+    }
+
+    .banner-text h1 {
+        color: white;
+        line-height: 36px;
+        font-size: 30px;
+    }
+
+    .all-btn a {
+        padding: 10px 15px;
+        font-size: 14px !important;
+    }
+
+    .banner-text p {
+        font-size: 22px !important;
+    }
+
+    /* dyb */
+
+    .dyb-card-container {
+        display: flex;
+        justify-content: center !important;
+    }
+
+    .dyb-card-container .card {
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    .dyb-top-text a {
+        color: var(--light-red);
+        font-size: 16px !important;
+    }
+
+    .card-btn a {
+        padding: 1px 14px;
+        top: 28px;
+        right: 28px;
+        font-size: 11px !important;
+    }
+
+    .cart p {
+        padding: 7px;
+        width: 92%;
+        color: white;
+        font-weight: 500;
+        position: absolute;
+        bottom: 104px;
+        left: 11px;
+    }
+
+    .card-bellow-content {
+        padding: 5px !important;
+    }
+
+    .card-bellow-content p {
+        font-size: 17px !important;
+    }
+
+
+
+    .card-bellow-content h3 {
+        font-size: 18px;
+        line-height: 20px;
+        font-weight: 550;
+    }
+
+    /* bbg */
+    .bbg {
+        padding-top: 25px;
+        padding-bottom: 30px;
+    }
+
+    .bbg-card-container {
+        padding-top: 22px;
+    }
+
+    .bbg-top-text a {
+        color: var(--light-red) !important;
+        font-size: 15px !important;
+    }
+
+    .bbg-card-container .card-body h5 {
+        font-size: 20px !important;
+    }
+
+    /* about */
+    .about-left-text h2 {
+        font-size: 25px;
+        line-height: 30px;
+    }
+
+    .about-left-text h3 {
+        font-size: 18px;
+    }
+
+    .about-left-text .para2 {
+        display: none;
+    }
+
+    /* author */
+    .author {
+        padding: 50px 0;
+    }
+
+    .author-card-container .author-card {
+        width: 55%;
+        margin: 0 auto;
+    }
+
+    .author-top-content p {
+        font-size: 15px !important;
+    }
+
+    .author-top-content a {
+        font-size: 15px !important;
+    }
+
+    .author-card-container .card h5 {
+        font-size: 22px !important;
+    }
+
+    /* gcp */
+    .gcp-right-part form input {
+        width: 70%;
+        padding: 9px;
+        border-radius: 30px;
+        outline: none;
+        border: 0;
+        margin-top: 11px;
+    }
+
+    /* gcp */
+    .gcp {
+        background-color: #5b9894;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .gcp-form-btn {
+        padding: 7px 22px;
+        top: 14px;
+        right: 84px;
+        color: white;
+    }
+
+    .side-btn a {
+        background-color: var(--light-red);
+        color: white;
+        font-weight: 600;
+        padding: 15px 18px;
+        /* position: fixed; */
+    }
+
+    /* blog */
+    .blog-card-container .blog-card {
+        width: 50%;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+
+
+    .blog-top-text a {
+        font-size: 16px !important;
+        color: var(--light-red);
+    }
+
+    .blog-card-container .blog-card .card-body {
+        padding: 0;
+        padding: 22px;
+    }
+
+    /* top-book */
+    .top-book {
+        background-color: #d9dbcd;
+        padding-top: 70px;
+        padding-bottom: 50px;
+    }
+
+    .books-card-container .card {
+        margin-bottom: 30px;
+        width: 50%;
+        margin: 0px auto;
+        margin-bottom: 20px;
+    }
+
+    .books-card-container {
+        padding-top: 25px;
+    }
+
+    .top-book-top-text a {
+        font-size: 16px !important;
+    }
+
+    /* footer */
+    .footer-content {
+        padding-top: 35px;
+        padding-bottom: 35px;
+    }
+
+    .footer-images figure img {
+        height: 45px;
+        width: 117px;
+    }
+
+    .footer-text {
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width:480px) {
+    h2 {
+        font-size: 23px;
+    }
+
+    /* banner */
+    .banner {
+        background-size: 166% 100%;
+    }
+
+    .banner-text {
+        width: 80% !important;
+    }
+
+    .banner-text p {
+        font-size: 20px !important;
+    }
+
+    .all-btn a {
+        padding: 10px 13px;
+        font-size: 13px !important;
+    }
+
+    .banner-btn {
+        margin-top: 24px;
+    }
+
+    /* dyb */
+    .dyb {
+        padding-top: 50px;
+        padding-bottom: 30px;
+    }
+
+    .cart p {
+        padding: 5px;
+        width: 91%;
+        color: white;
+        font-weight: 500;
+        position: absolute;
+        bottom: 98px;
+        left: 10px;
+    }
+
+    .card-btn a {
+        /* background-color: #cc302b; */
+        padding: 1px 10px;
+        top: 24px;
+        right: 24px;
+        font-size: 9px !important;
+    }
+
+    .card-bellow-content h4 {
+        font-size: 15px;
+    }
+
+    .card-bellow-content h3 {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    /* about */
+    .about-left-text h2 {
+        font-size: 23px;
+        line-height: 30px;
+    }
+
+    .about-left-text h3 {
+        font-size: 17px;
+    }
+
+    .about-btn {
+        margin-top: 22px;
+    }
+
+    .about-left-text h4 {
+        margin-top: 11px;
+        font-size: 14px !important;
+    }
+
+    /* author */
+    .author-card-container {
+        padding-top: 36px;
+    }
+
+    /* gcp */
+    .gcp-right-part form input {
+        padding: 7px;
+    }
+
+    .gcp-right-part form input {
+        width: 50%;
+        padding: 8px;
+        border-radius: 30px;
+        outline: none;
+        border: 0;
+        margin-top: 11px;
+    }
+
+    .gcp-form-btn {
+        padding: 6px 15px;
+        top: 14px;
+        right: 117px;
+        color: white;
+    }
+
+    /* blog */
+    .blog-card-container .blog-card h5 {
+        font-size: 14px !important;
+        /* font-weight: 400 !important; */
+    }
+
+    /* books */
+    .books-card-container .card-bellow-text h5 {
+        font-size: 16px;
+        font-weight: 550;
+        color: white;
+    }
+
+    .top-book-card-link a {
+        font-size: 16px !important;
+    }
+
+    .top-book {
+        padding-top: 60px;
+        padding-bottom: 34px;
+    }
+
+    .footer-text {
+        margin-bottom: 10px;
+    }
+
+    .footer-images {
+        margin-top: 10px !important;
+    }
+}
+
+@media screen and (max-width:365px) {
+    .all-btn a {
+        padding: 9px 12px;
+        font-size: 10px !important;
+    }
+
+    /* banner */
+    .banner {
+        background-size: 214% 100%;
+    }
+
+    /* dob */
+    .card-btn a {
+        /* background-color: #cc302b; */
+        padding: 1px 10px;
+        top: 17px;
+        right: 17px;
+        font-size: 9px !important;
+    }
+
+
+    .cart p {
+        padding: 2px;
+        width: 92%;
+        color: white;
+        font-weight: 500;
+        position: absolute;
+        bottom: 104px;
+        left: 13px;
+    }
+
+    .dyb-card-container .card {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    /* bbg */
+    .bbg-card-container .card-body h5 {
+        font-size: 19px !important;
+    }
+
+    /* about */
+    .about-left-text h3 {
+        font-size: 15px;
+    }
+
+    .about-btn {
+        margin-top: 12px;
+    }
+
+    /* author */
+    .author-card-container .card h5 {
+        font-size: 19px !important;
+    }
+
+    .author-card-container .author-card {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    /* gcp */
+    .gcp-right-part form input {
+        width: 50%;
+        padding: 6px;
+        border-radius: 30px;
+        outline: none;
+        border: 0;
+        margin-top: 11px;
+    }
+
+    .gcp-form-btn {
+        padding: 4px 3px;
+        top: 14px;
+        right: 88px;
+        color: white;
+        font-size: 12px !important;
+    }
+
+    /* blog */
+    .blog-card-container .blog-card {
+        width: 100%;
+    }
+
+    /* top-book */
+    .books-card-container .card {
+        margin-bottom: 30px;
+        width: 100%;
+        margin: 0px auto;
+        margin-bottom: 20px;
+    }
+
+    /* footer */
+    .footer-content p {
+        font-size: 16px !important;
+    }
+
+    .footer-content li {
+        font-size: 16px !important;
+    }
+}
